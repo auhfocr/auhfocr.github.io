@@ -1,0 +1,16 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ankarahukuk-fontlar}[2026/11/25 Ankara Hukuk notlari - yazi tipleri]
+% XeLaTeX + fontspec. Önce TeX Gyre ailesi (Palatino/Helvetica benzeri),
+% yoksa Sphinx'in varsayılanı olan FreeFont, o da yoksa Latin Modern.
+\RequirePackage{fontspec}
+\defaultfontfeatures[\rmfamily,\sffamily]{Ligatures=TeX}
+\IfFontExistsTF{TeX Gyre Pagella}
+  {\setmainfont{TeX Gyre Pagella}}
+  {\IfFontExistsTF{FreeSerif}{\setmainfont{FreeSerif}}{}}
+\IfFontExistsTF{TeX Gyre Heros}
+  {\setsansfont{TeX Gyre Heros}[Scale=MatchLowercase]}
+  {\IfFontExistsTF{FreeSans}{\setsansfont{FreeSans}}{}}
+\IfFontExistsTF{DejaVu Sans Mono}
+  {\setmonofont{DejaVu Sans Mono}[Scale=MatchLowercase]}
+  {\IfFontExistsTF{FreeMono}{\setmonofont{FreeMono}}{}}
+\endinput

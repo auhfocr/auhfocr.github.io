@@ -1,0 +1,108 @@
+==================================
+1. Dönem — 1–3. Hafta (29.09.2022)
+==================================
+
+**Dersin Hocası:** Doç. Dr. Kaya Burak ÖZTÜRK
+
+**Önerdiği Kaynaklar:**
+
+* *Yeni Türk İdare Hukuku* (Ali D. Ulusoy)
+
+* *Türk İdare Hukuku* (Bahtiyar Akyılmaz – Murat Sezginer – Cemil Kaya)
+
+* *İdare Hukuku* (Kemal Gözler)
+
+Hocamız ilk hafta genel olarak dersin konusu üzerinde durmuştur. Ayrıca "Devlet nedir?" sorusunu bizlere sorarak sohbet etmiştir.
+
+İdare hukukunun hangi tür ilişkilere uygulandığını bilmek, idare hukuku kurallarının niteliği hakkında bilgi verir.
+
+İdare hukuku **idari fonksiyona** ya da **idari işleve** uygulanan hukuktur. İdari işlev ya da fonksiyon dediğimiz zaman kastettiğimiz şey bir faaliyetler toplamıdır. Yani içerisinde birden çok faaliyeti barındıran, belirli ortak özelliklere sahip faaliyetleri barındıran bir toplam. Biz de bu birden çok faaliyetin ortak özellikleri nedir, bunları bulmaya çalışacağız. Bu ortak özellikler neticesinde idare hukukunun da özellikleri ortaya çıkacaktır.
+
+**Peki idare hukuku olmasaydı bu faaliyetlere ne tür kurallar uygulanırdı?** → **Cevap:** Özel Hukuk Kuralları. Yani idare hukukunun alternatifi özel hukuktur diyebiliriz.
+
+Fransız Uyuşmazlık Mahkemesinin 1873 tarihli bir kararı vardır. Bu karar idare hukuku kurallarının idari işleve uygulanması konusunda bir dönüm noktası kabul edilir.
+
+* **Blanco Kararı:** Blanco soyadlı küçük bir kız çocuğu Fransız demiryollarına ait bir alanda oynarken ray üzerindeki aracın çarpmasıyla ağır yaralanıyor. Ailesi dava açıyor. Bu dava adli yargıda mı görülecek yoksa Danıştayda mı görülecek diye bir soru oluşuyor. Dava Uyuşmazlık Mahkemesine gidiyor ve Uyuşmazlık Mahkemesi 1873 tarihli Blanco kararıyla şunu söylüyor: İdarenin yürüttüğü kamu hizmetleri söz konusu olduğunda bu kamu hizmetinin yürütülmesinden doğan zararlar Borçlar Kanununun ya da Medeni Kanunun yani özel hukuk kurallarının uygulanması mümkün değildir. Çünkü kamu hizmetleri özel hukuktan farklı bir düzenleyişi gerektirir. Bu yüzden dava Danıştayda görülmeli ve idare hukuku kurallarına tabi olmalıdır.
+
+→ Özel hukuk kuralları idari işlevin yürütülmesinden doğan uyuşmazlıkların çözümünde elverişli değildir.
+
+Belirli ortak özelliklere sahip faaliyetler toplamına idari işlev ya da fonksiyon denir demiştik. Şimdi bu faaliyetleri üç boyutta değerlendireceğiz:
+
+1. **Organik Boyut:** Faaliyet **kim** tarafından yürütülüyor?
+
+2. **Maddi Boyut:** Yürütülen faaliyetin **konusu** ne? (Konu / içerik)
+
+3. **Biçimsel Boyut:** Bu faaliyet **nasıl** yürütülüyor?
+
+1) Organik Boyut
+----------------
+
+    İdari işlevi kavramakta hiçbir boyut tek başına yeterli değildir. Ancak ilk aşamada idari işlevi "kim" sorusuyla tanımlamak istersek **İDARE** diyebiliriz (fakat yine de yeterli değil).
+
+Devletin organları ve idari işlev ilişkisi:
+
+* Bu dikdörtgen devletin herhangi bir organı tarafından yapılan işlev, işlem vb. içeriyor. Ölçütümüz devletten kaynaklanıyor olması.
+
+* **Dar anlamda yürütme:** Cumhurbaşkanı
+
+* **Geniş anlamda yürütme:** Cumhurbaşkanı ve yasama ve yargı organları dışında kalan her şey.
+
+* **Yasama** içinde kalan idari işlev örneği: TBMM personel işlemleri.
+
+* **Yargı** içinde kalan idari işlev örneği: Adliye personel işlemleri.
+
+* **Yürütme** içinde: İdarenin özel hukuk işlemleri (idari işlev dışı) ve idarenin idari işlevi.
+
+* **Dışarıdan (özel hukuk kişileri):** Vakıf, dernek gibi özel hukuk kişilerinin yaptığı bazı işlemler.
+
+→ İdarenin özel hukuk kurallarına tabi, ilişkinin karşı tarafıyla tümüyle **eşit** koşullar içerisinde herhangi bir üstünlük ya da ayrıcalığı olmadan özel hukuk kişisiymiş gibi yürüttüğü faaliyetler idari işlev dışında kalır. Dolayısıyla idarenin yaptığı her şey idari işleve dahildir diyemeyiz. O yüzden *"idari işlev salt idare tarafından yürütülen faaliyetler toplamıdır"* gibi bir cümle yanlıştır.
+
+**Soru:** Organik olarak idareden kaynaklanmayan ama idari işleve dahil olan faaliyetler var mıdır?
+
+* Birtakım özel hukuk tüzel kişilerinin yaptığı bazı işlemler de idari işleve dahil edilir. Çok istisnai olsa da Danıştayın yaklaşımıyla bu mümkündür. Vakıf, dernek gibi özel hukuk tüzel kişilerinin yaptığı bazı işlemler Danıştay tarafından idari işlev kabul edilir. → **Örnek:** *Adalet Teşkilatını Güçlendirme Vakfı.* Bu vakıf Adalet Bakanlığı personeline lojman tahsis ediyor. Tek yanlı iradesiyle birtakım idari işlemler yapabiliyor. Danıştay da diyor ki: "Bu vakıf kamu kurumuna bitişiktir."
+
+**İdari İşlevin Formülü:**
+
+* İdarenin yaptığı özel hukuka tabi olmayan işlem ve faaliyetler
+
+* **+** Yasama organının yasama işlemleri dışındaki işlemleri
+
+* **+** Yargı organının yargı işlemleri dışında kalan işlemleri
+
+* **+** Bazı özel hukuk tüzel kişilerinin idari işlemleri = **İDARİ İŞLEV**
+
+2) Maddi Boyut
+--------------
+
+Buraya kadar hep organik boyut üzerinde durduk. Şimdi maddi boyutu inceleyelim. İdari işlevin maddi boyutunu anlamak için idari işlevin amacının ne olduğundan yola çıkabiliriz:
+
+* Yasama = Kural koyma
+
+* Yürütme = Kuralları uygulama
+
+* Yargı = Uyuşmazlık çözme
+
+⇒ **İdari işlevin amacı kamu yararını sağlamaktır.**
+
+    **NOT:** İdare, özel hukuk işlemi yaptığı zaman da aslında dolaylı olarak kamu yararını gerçekleştirmeye çalışır.
+
+* Eğer bir faaliyet kamu hizmetiyse bir idari işlevdir. Ama bu cümle idari işlevi tanımlamada yetersizdir. → **Örnek (Ekonomik kamu hizmetleri):** Bu faaliyetler idare tarafından yürütülüyor, kamu yararı amaçlanarak yürütülüyor. Baktığımızda idare hukuku kuralları uygulanır diyecekken faaliyetin ekonomik niteliği nedeniyle yasa koyucu bu faaliyetlerin özel hukuk kurallarına göre yürütülmesi gerektiğini söyler. Yani kamu hizmeti olduğu halde bu faaliyet özel hukuk kurallarına göre yürütülür diyor. → **Örnek:** *Devlet Demir Yolları.* TCDD bir kamu tüzel kişisidir, idare içinde yer alır. Ancak ekonomik boyutu nedeniyle özel hukuk kuralları uygulanıyor.
+
+* Bu örnekten de anlaşılacağı üzere "kamu hizmeti" kavramı idari işlevi açıklamada yetersiz kalıyor.
+
+3) Biçimsel Boyut (Şekli Boyut)
+-------------------------------
+
+Organik ve maddi boyutlarda istediğimiz netliği sağlayamadık, şimdi biçimsel boyutuna bakalım.
+
+→ **İdari işlev kamu gücü ayrıcalıkları kullanılarak yürütülür.**
+
+**Nedir kamu gücü ayrıcalıkları?** → İdarenin ilişkinin karşı tarafıyla eşit bir konumda olmaksızın kamu yararlarının gerektirdiği ölçüde karşı taraftan üstün konumda olması, iradesini ilişkinin muhatabına dayatabilmesi.
+
+* **Örnek:** İdarenin bir altyapı projesi var. Çok merkezi bir noktada trafik sorununu büyük ölçüde azaltacak köprülü kavşak yapmak istiyor. İdarenin para vb. dışında o kavşağın yapılacağı yerdeki özel kişilere ait taşınmazlara da ihtiyacı var. İdare önce özel hukuk yöntemleriyle taşınmazı satın almak istiyor. Ancak özel hukuk yöntemi kullandığından iradesini dayatamıyor. İşte böyle bir durumda idare kamulaştırma yöntemini kullanıyor. Malın gerçek değerini ödemek şartıyla karşı tarafın iradesini hiçe sayarak kendi iradesini dayatıyor. → Buna **kamu gücü ayrıcalığı** denir.
+
+* Genellikle de kolluk kuvvetleri alanındaki faaliyetler kamu gücü ayrıcalıklarının tipik görünümleridir.
+
+★ **Toparlayacak olursak:** İdari işlevi belirlemekte başvuracağımız asıl ölçüt **kamu gücüdür**. Şekli ölçüttür yani faaliyetin yürütülme biçimidir ama özellikle "kamu hizmeti" kavramıdır (özel hukuka tabi kamu hizmetleri dışında).
+
+→ **Örnek:** Trenle Ankara–İstanbul yolculuğu yapmak için bilet aldınız ve trene bindiniz. Yolda içinde valizlerinizin bulunduğu vagon devrildi. Bu noktada dava açabilirsiniz. Sizin açacağınız dava taşıma sözleşmesine bağlı olarak özel hukuk kurallarına tabi tutulur. Ancak vagonun devrildiği noktada bir tarla var diyelim ve bu tarla sahibi uğradığı zarar için dava açmak istiyor. İşte o zaman idare hukuku kuralları uygulanır. Yani sizin açtığınız dava adli yargıda yargılanırken tarla sahibinin açacağı dava idari yargıda görülür. Çünkü tarla sahibi ile tren arasında herhangi bir özel hukuk ilişkisi söz konusu değil. TCDD de idareye bağlı olduğundan idare hukuku hükümleri uygulanır.

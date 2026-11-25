@@ -1,0 +1,99 @@
+# Ders kaydı — sitenin tek bilgi kaynağı.
+#
+# Her [[ders]] bloğu bir Sphinx projesidir. Ana sayfa, tema ve PDF başlık
+# sayfası bilgilerini buradan alır. Yeni ders eklemek için bir blok ekleyin
+# ve dersin conf.py dosyasında `yapilandir(globals(), "<kimlik>")` çağırın.
+#
+#   kimlik     : URL'de kullanılan kısa ad (site/<kimlik>/)
+#   kaynak     : conf.py dosyasının bulunduğu klasör (depo köküne göre)
+#   ad         : dersin adı
+#   alt_baslik : kartta ve PDF kapağında adın altındaki satır
+#   hoca       : dersin öğretim üyesi/üyeleri
+#   yil        : öğretim yılı
+#   sube       : sınıf/şube
+#   sinif      : ana sayfada gruplama için sınıf numarası
+#   latex_ust  : PDF'de en üst bölüm düzeyi; dönem sayfaları varsa "part"
+
+[site]
+baslik = "Hukuk Ders Notları"
+alt_baslik = "Ankara Üniversitesi Hukuk Fakültesi"
+aciklama = "Ankara Üniversitesi Hukuk Fakültesi derslerine ait öğrenci ders notları; her ders için web sürümü ve PDF."
+pdf_uyari = "Bu belge öğrenci tarafından tutulan ders notlarından oluşur; Ankara Üniversitesi'nin veya öğretim üyelerinin resmî yayını değildir. Hatalar bulunabilir; sınavlara hazırlanırken asıl kaynaklara başvurun."
+uyari = "Bu site öğrenci tarafından tutulan ders notlarından oluşur; Ankara Üniversitesi'nin veya öğretim üyelerinin resmî yayını değildir. Hatalar bulunabilir; sınavlara hazırlanırken asıl kaynaklara başvurun."
+
+[[ders]]
+kimlik = "anayasa"
+kaynak = "anayasa/docs"
+ad = "Anayasa Hukuku"
+alt_baslik = "Genel Esaslar ve Türk Anayasa Hukuku"
+hoca = ""
+yil = "2018–2019"
+sube = "1/B"
+sinif = 1
+latex_ust = "part"
+
+[[ders]]
+kimlik = "anayasa-cy"
+kaynak = "anayasa-cy/docs"
+ad = "Anayasa Hukuku"
+alt_baslik = "I. ve II. Dönem (derleyen: Cengiz Yıldırım)"
+hoca = "Prof. Dr. Selin Esen"
+yil = "2022–2023"
+sube = "1/B"
+sinif = 1
+latex_ust = "part"
+
+[[ders]]
+kimlik = "borc"
+kaynak = "borc/docs/source"
+ad = "Borçlar Hukuku Genel Hükümler"
+alt_baslik = "Güz ve Bahar Dönemleri"
+hoca = "Doç. Dr. Leyla Müjde Kurt"
+yil = "2022–2023"
+sube = "2/B"
+sinif = 2
+latex_ust = "part"
+
+[[ders]]
+kimlik = "ceza"
+kaynak = "ceza/docs"
+ad = "Ceza Hukuku Genel Hükümler"
+alt_baslik = "Haftalık Ders Notları"
+hoca = "Prof. Dr. Muharrem Özen, Ar. Gör. Eylem Baş"
+yil = "2018–2019"
+sube = "2/B"
+sinif = 2
+latex_ust = "part"
+
+[[ders]]
+kimlik = "idare"
+kaynak = "idare/source"
+ad = "İdare Hukuku"
+alt_baslik = "İdari Teşkilat, İdari İşlem, Kamu Hizmeti, Sorumluluk"
+hoca = "Doç. Dr. Kaya Burak Öztürk"
+yil = "2022–2023"
+sube = "2/B"
+sinif = 2
+latex_ust = "chapter"
+
+[[ders]]
+kimlik = "maliye"
+kaynak = "maliye/docs"
+ad = "Kamu Maliyesi"
+alt_baslik = "Kamu Gelirleri, Vergi Teorisi, Kamu Harcamaları"
+hoca = "Dr. Öğr. Üyesi Tuğçe Akdemir"
+yil = "2022–2023"
+sube = "2/A-B"
+sinif = 2
+latex_ust = "part"
+
+[[ders]]
+kimlik = "millet"
+kaynak = "millet"
+ad = "Milletlerarası Hukuk"
+alt_baslik = "Kaynaklar, Süjeler, Deniz Hukuku, Diplomatik İlişkiler"
+hoca = "Doç. Dr. Ülkü Halatçı Ulusoy, Dr. Öğr. Üyesi Nasih Sarp Ergüven, Dr. Öğr. Üyesi Erkan Akdoğan"
+yil = "2022–2023"
+sube = "2/B"
+sinif = 2
+latex_ust = "chapter"

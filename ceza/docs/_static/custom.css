@@ -1,0 +1,11 @@
+/* Başlığın altındaki "Not sayfaları: X–Y" satırı */
+p.hafta-meta {
+    font-size: 0.85em;
+    color: #888;
+    margin-top: -0.8em;
+}
+/* Tablolar ekrana sığsın */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal;
+}

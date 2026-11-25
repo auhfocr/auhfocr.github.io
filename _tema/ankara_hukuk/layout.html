@@ -1,0 +1,146 @@
+{#- Ankara Hukuk — ders notları teması. basic/layout.html üzerine kurulur. -#}
+{%- extends "basic/layout.html" %}
+
+{%- set ders = ders or {} %}
+{%- set site = site or {} %}
+{#- Site kökü (tüm dersler sayfası): ders kökündeki _static klasörünün iki üstü. #}
+{%- set kok_url = pathto('_static/', 1) ~ '../../index.html' %}
+{%- set pdf_url = pathto(pdf_adi, 1) if pdf_adi else '' %}
+{%- set pdf_goster = pdf_url and (pdf_var is not defined or pdf_var) %}
+
+{%- macro ikon(ad) -%}
+  {%- if ad == 'menu' -%}
+  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+  {%- elif ad == 'pdf' -%}
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+  {%- elif ad == 'tema' -%}
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
+  {%- elif ad == 'ara' -%}
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M16 16l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  {%- endif -%}
+{%- endmacro %}
+
+{%- block htmltitle %}
+  <title>{% if title and title|striptags != ders.ad ~ ' Ders Notları' %}{{ title|striptags|e }} · {% endif %}{{ ders.ad|e }} · {{ site.baslik|e }}</title>
+{%- endblock %}
+
+{%- block extrahead %}
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#14284B">
+  <meta name="description" content="{{ ders.ad|e }} ders notları ({{ ders.yil|e }}{% if ders.hoca %}, {{ ders.hoca|e }}{% endif %}).">
+  <link rel="icon" type="image/svg+xml" href="{{ pathto('_static/amblem.svg', 1) }}">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("au-tema");
+        if (t === "koyu" || t === "acik") document.documentElement.setAttribute("data-tema", t);
+      } catch (e) {}
+    })();
+  </script>
+{%- endblock %}
+
+{%- block scripts %}
+  {{ super() }}
+  <script defer src="{{ pathto('_static/ankara.js', 1) }}"></script>
+{%- endblock %}
+
+{%- block relbar1 %}{% endblock %}
+{%- block relbar2 %}{% endblock %}
+
+{%- block header %}
+<a class="atla" href="#icerik">İçeriğe geç</a>
+<header class="ust-serit">
+  <div class="ust-ic">
+    <button class="menu-dugme" type="button" aria-controls="yan-panel" aria-expanded="false" aria-label="İçindekileri aç">{{ ikon('menu') }}</button>
+    <a class="marka" href="{{ kok_url }}">
+      <img class="marka-amblem" src="{{ pathto('_static/amblem.svg', 1) }}" alt="" width="36" height="36">
+      <span class="marka-yazi">
+        <span class="marka-ust">{{ site.alt_baslik }}</span>
+        <span class="marka-alt">{{ site.baslik }}</span>
+      </span>
+    </a>
+    <nav class="ust-baglantilar" aria-label="Site">
+      <a class="ust-baglanti" href="{{ kok_url }}">Tüm dersler</a>
+      {%- if pdf_goster %}
+      <a class="ust-baglanti pdf-dugme" href="{{ pdf_url }}" download>{{ ikon('pdf') }}<span>PDF</span></a>
+      {%- endif %}
+      <button class="tema-dugme" type="button" aria-label="Açık/koyu görünüm" title="Açık/koyu görünüm">{{ ikon('tema') }}</button>
+    </nav>
+  </div>
+</header>
+{%- endblock %}
+
+{%- block content %}
+<div class="duzen">
+  <aside id="yan-panel" class="yan-panel" aria-label="Ders içeriği">
+    <div class="kunye">
+      <div class="kunye-etiket">{{ ders.sube }} · {{ ders.yil }}</div>
+      <a class="kunye-ad" href="{{ pathto(root_doc) }}">{{ ders.ad }}</a>
+      {%- if ders.hoca %}
+      <div class="kunye-hoca">{{ ders.hoca }}</div>
+      {%- endif %}
+    </div>
+    <form class="arama" action="{{ pathto('search') }}" method="get" role="search">
+      <label class="gorunmez" for="arama-kutusu">Notlarda ara</label>
+      {{ ikon('ara') }}
+      <input id="arama-kutusu" type="search" name="q" placeholder="Notlarda ara…" autocomplete="off" spellcheck="false">
+    </form>
+    <nav class="icindekiler" aria-label="İçindekiler">
+      {{ toctree(collapse=True, maxdepth=3, titles_only=True, includehidden=True) }}
+    </nav>
+    {%- if pdf_goster %}
+    <a class="pdf-kart" href="{{ pdf_url }}" download>
+      {{ ikon('pdf') }}
+      <span><strong>PDF sürümü</strong><small>Tüm notlar tek dosyada</small></span>
+    </a>
+    {%- endif %}
+  </aside>
+  <div class="perde" hidden></div>
+
+  <main id="icerik" class="icerik">
+    {%- if parents or pagename != root_doc %}
+    <nav class="iz" aria-label="Konum">
+      <a href="{{ pathto(root_doc) }}">{{ ders.ad }}</a>
+      {%- for p in parents %}
+      <span aria-hidden="true">›</span> <a href="{{ p.link|e }}">{{ p.title }}</a>
+      {%- endfor %}
+    </nav>
+    {%- endif %}
+
+    <article class="metin">
+      {% block body %}{% endblock %}
+    </article>
+
+    {%- if prev or next %}
+    <nav class="gecis" aria-label="Önceki ve sonraki sayfa">
+      {%- if prev %}
+      <a class="gecis-onceki" href="{{ prev.link|e }}" rel="prev"><small>← Önceki</small><span>{{ prev.title }}</span></a>
+      {%- else %}<span></span>{%- endif %}
+      {%- if next %}
+      <a class="gecis-sonraki" href="{{ next.link|e }}" rel="next"><small>Sonraki →</small><span>{{ next.title }}</span></a>
+      {%- endif %}
+    </nav>
+    {%- endif %}
+  </main>
+
+  {%- if display_toc %}
+  <aside class="bu-sayfada" aria-label="Bu sayfada">
+    <div class="bu-sayfada-baslik">Bu sayfada</div>
+    {{ toc }}
+  </aside>
+  {%- endif %}
+</div>
+{%- endblock %}
+
+{%- block footer %}
+<footer class="alt-bilgi">
+  <div class="alt-ic">
+    <p class="alt-uyari">{{ site.uyari }}</p>
+    <p class="alt-kucuk">
+      <a href="{{ kok_url }}">{{ site.baslik }}</a> · {{ ders.ad }} ({{ ders.yil }})
+      {%- if last_updated %} · Son güncelleme: {{ last_updated }}{% endif %}
+      · <a href="https://www.sphinx-doc.org/">Sphinx</a> ile hazırlandı
+    </p>
+  </div>
+</footer>
+{%- endblock %}

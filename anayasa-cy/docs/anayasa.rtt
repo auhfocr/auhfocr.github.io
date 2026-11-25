@@ -1,0 +1,15 @@
+[TEMPLATE_CONFIGURATION]
+name = Anayasa Hukuku Ders Notları
+template = book
+
+[STRINGS]
+@chapter = 'Bölüm'
+@contents = 'İçindekiler'
+@index = 'Dizin'
+@figure = 'Şekil'
+@table = 'Tablo'
+@list_of_figures = 'Şekiller'
+@list_of_tables = 'Tablolar'
+@note = 'Not'
+@warning = 'Uyarı'
+@seealso = 'Ayrıca bakınız'

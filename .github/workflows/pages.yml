@@ -1,0 +1,66 @@
+# Ders notlarını derler (HTML + PDF) ve GitHub Pages'e yayınlar.
+# Depo ayarı: Settings → Pages → Build and deployment → Source: "GitHub Actions"
+name: Notları derle ve yayınla
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  derle:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: LaTeX (XeLaTeX) ve yazı tiplerini kur
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            make latexmk texlive-xetex texlive-latex-recommended texlive-latex-extra \
+            texlive-fonts-recommended texlive-lang-european \
+            fonts-texgyre fonts-dejavu-core
+
+      - name: Python paketlerini kur
+        run: pip install -r requirements.txt
+
+      - name: Siteyi derle (HTML + PDF)
+        run: python build.py --pdf-zorunlu
+
+      - name: Hata günlüklerini sakla
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: derleme-gunlukleri
+          path: |
+            _build/gunluk/
+            _build/latex/*/latex/*.log
+          if-no-files-found: ignore
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  yayinla:
+    needs: derle
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

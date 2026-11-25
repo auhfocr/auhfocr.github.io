@@ -1,0 +1,8 @@
+# Ankara Hukuk — ders notları için Sphinx teması (basic temasından türer)
+[theme]
+inherit = "basic"
+stylesheets = ["ankara.css"]
+sidebars = []
+pygments_style = { default = "friendly" }
+
+[options]

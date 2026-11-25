@@ -1,0 +1,19 @@
+# Derleme çıktıları (GitHub Actions yeniden üretir)
+_site/
+_build/
+build/
+__pycache__/
+*.pyc
+
+# Sanal ortamlar
+.venv/
+venv/
+
+# Eski rinohtype çıktıları (artık build.py PDF üretiyor)
+*(Sphinx).pdf
+
+# Orijinal (taranmış) ders notu PDF'leri depoya girmez
+anayasa-cy/1-B ANAYASA HUKUKU DERS NOTLARI PROF. DR. SELİN ESEN.pdf
+borc/BORÇLAR HUKUKU GENEL HÜKÜMLER LEYLA MÜJDE KURT 2B.pdf
+borc/ocr/*.pdf
+borc/docs/source/_static/*.pdf

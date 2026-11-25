@@ -1,0 +1,16 @@
+{#- Arama sayfası: Türkçe metinler ve tema düğmeleri. -#}
+{%- extends "basic/search.html" %}
+{% set title = 'Notlarda ara' %}
+{% block body %}
+  <h1 id="search-documentation">Notlarda ara</h1>
+  <noscript>
+  <div class="admonition warning"><p>Arama için tarayıcınızda JavaScript'i etkinleştirin.</p></div>
+  </noscript>
+  <p class="arama-ipucu">Birden çok sözcük yazarsanız yalnızca hepsini içeren sayfalar listelenir.</p>
+  <form class="arama-sayfa" action="" method="get">
+    <input type="search" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="ör. kanunilik ilkesi">
+    <input type="submit" value="Ara">
+    <span id="search-progress"></span>
+  </form>
+  <div id="search-results"></div>
+{% endblock %}

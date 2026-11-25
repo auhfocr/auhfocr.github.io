@@ -1,0 +1,27 @@
+[TEMPLATE_CONFIGURATION]
+name = Ceza Hukuku Genel Hükümler
+template = book
+stylesheet = ceza.rts
+
+[STRINGS]
+@chapter = 'Bölüm'
+@contents = 'İçindekiler'
+@index = 'Dizin'
+@figure = 'Şekil'
+@table = 'Tablo'
+@list_of_figures = 'Şekiller'
+@list_of_tables = 'Tablolar'
+@note = 'Not'
+@warning = 'Uyarı'
+@seealso = 'Ayrıca bakınız'
+@important = 'Önemli'
+@tip = 'İpucu'
+@hint = 'İpucu'
+
+[contents_right_page]
+header_text = '\t\t{DOCUMENT_TITLE}'
+footer_text = '{SECTION_TITLE(2)}\t\t{PAGE_NUMBER}'
+
+[contents_left_page]
+header_text = '{DOCUMENT_TITLE}'
+footer_text = '{PAGE_NUMBER}\t\t{SECTION_TITLE(1)}'

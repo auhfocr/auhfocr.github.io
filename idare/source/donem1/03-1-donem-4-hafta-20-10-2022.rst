@@ -1,0 +1,112 @@
+================================
+1. Dönem — 4. Hafta (20.10.2022)
+================================
+
+Geçen haftaki dersimizde idarenin kural koyma işlemlerinin nasıl yasallaştırıldığından bahsetmiştik. İdarenin sahip olduğu **kural koyma yetkisi** —biz buna **düzenleme yetkisi** diyoruz— yine yasallık ilkesi çerçevesinde kullanılır. Yani idare kural koyabilmek için de mutlaka bir kanuna dayanmalıdır. Kanunla konulan kuralları ayrıntılandıran ikincil nitelikte düzenlemeler yapabilir. Bu düzenlemelerin de kanunlara ve diğer normlara aykırı olmaması gerekir. İdarenin kural koyma yetkisine sahip olması yasallık ilkesinin tümüyle dışında değildir.
+
+    Bu anlatılanlar 2017'den önce tümüyle, 2017'den sonra ise büyük ölçüde geçerlidir.
+
+Yasallık İlkesi ve Cumhurbaşkanlığı Kararnameleri (CBK)
+-------------------------------------------------------
+
+**Acaba yasallık ilkesi Cumhurbaşkanlığı Kararnameleri yönünden de geçerli mi?** Peşinen söyleyelim: Cumhurbaşkanlığı Kararnameleri dışında idarenin yaptığı her şey için yasallık ilkesi geçerlidir. Hem Cumhurbaşkanının diğer işlemleri hem de idarenin işlemleri. Bir tek Cumhurbaşkanlığı Kararnameleri yönünden yasallık ilkesinin ne ölçüde geçerli olduğunu değerlendirmemiz gerekiyor.
+
+* Cumhurbaşkanlığı Kararnameleri **düzenleyici işlemlerdir**. Yani kural koyan bir işlemdir.
+
+* **Cumhurbaşkanı Kararı** ile **Cumhurbaşkanlığı Kararnamesini** birbirinden ayırmamız gerekiyor:
+
+  * **Cumhurbaşkanı Kararı:** Bireysel nitelik taşır. Somut durumlara ilişkin genel kurallar koymaz. Tamamen bireyseldir.
+
+  * Cumhurbaşkanlığı Kararnamesi Anayasada öngörülür. Cumhurbaşkanı kararından Anayasada söz edilmiyor.
+
+  * **Örnek:** *"İstanbul Sözleşmesinin feshine dair Cumhurbaşkanlığı Kararnamesi"* dersek bu yanlış olur. Çünkü İstanbul Sözleşmesinin feshi bireysel bir karardır, o yüzden de **Cumhurbaşkanı Kararıyla** gerçekleşir.
+
+Anayasa m. 104/17 Çerçevesinde CBK Sınırları
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Cumhurbaşkanlığı Kararnameleri **An. m. 104/17**'de düzenleniyor:
+
+    *"Cumhurbaşkanı, yürütme yetkisine ilişkin konularda Cumhurbaşkanlığı kararnamesi çıkarabilir. Anayasanın ikinci kısmının birinci ve ikinci bölümlerinde yer alan temel haklar, kişi hakları ve ödevleriyle dördüncü bölümde yer alan siyasi haklar ve ödevler Cumhurbaşkanlığı kararnamesiyle düzenlenemez. Anayasada münhasıran kanunla düzenlenmesi öngörülen konularda Cumhurbaşkanlığı kararnamesi çıkarılamaz. Kanunda açıkça düzenlenen konularda Cumhurbaşkanlığı kararnamesi çıkarılamaz. Cumhurbaşkanlığı kararnamesi ile kanunlarda farklı hükümler bulunması halinde, kanun hükümleri uygulanır. Türkiye Büyük Millet Meclisinin aynı konuda kanun çıkarması durumunda, Cumhurbaşkanlığı kararnamesi hükümsüz hale gelir."*
+
+Yasallık ilkesi açısından bizi en çok ilgilendiren boyutu Cumhurbaşkanlığı Kararnamelerinin Cumhurbaşkanına, yürütme organına tanınan bir **asli düzenleme yetkisinin** kullanılarak çıkarılmasıdır.
+
+* **Asli**\ den kastımız: Cumhurbaşkanı herhangi bir kanuna dayanmadan **ilk elden** bir konuyu Cumhurbaşkanlığı Kararnamesi ile düzenleyebilir (her konuyu değil!).
+
+* Bu durum önceki derslerde bahsettiğimiz *"secundum legem"* (kanuna dayanma) ilkesini dışlıyor.
+
+* Anayasa bize şunu söylüyor: Bir alanda Cumhurbaşkanlığı Kararnamesi çıkarılabilmesi için o alanda yasal düzenleme olmaması gerekir. Eğer o alanda yasal düzenleme varsa Cumhurbaşkanlığı Kararnamesi çıkarılamaz. O alana ilişkin idarenin yapacağı düzenleyici işlemler o kanunun uygulanmasını sağlamaya yönelik **ikincil** diyebileceğimiz **türev düzenleyici işlemlerdir** (kanundan türeyen düzenleyici işlemler).
+
+* Asli yetki kullanımı olarak Cumhurbaşkanlığı Kararnamesi ise ancak o alanda ilgili yasal düzenleme yoksa çıkarılır. Dolayısıyla **"secundum legem" ilkesine tabi olmayan bir işlem türüdür.**
+
+**Anayasa Mahkemesi (AYM) Kararlarına Göre CBK Sınırları:**
+
+1. **Yürütme yetkisine ilişkin konularda çıkarılabilmesinin anlamı:**
+
+   * Yargı yetkisi kullanan kamu görevlilerinin kadrolarının ihdası yargı yetkisinin kullanılmasını doğrudan etkileyebildiğinden bunun yalnızca yürütme yetkisine ilişkin bir konu olduğu söylenemez. Dolayısıyla bunun CBK ile düzenlenmesi mümkün değildir. (Bir CBK'da kamu görevlilerinin kadrolarının ihdası düzenlenebilir ama yargıçlar söz konusu olduğunda bunu yapamaz.)
+
+   * **1)** CBK ile yargı yetkisine ilişkin ya da yargı yetkisinin kullanımını doğrudan etkileyen düzenlemeler yapılamaz.
+
+   * **2)** Kanunları değiştirmek yasama yetkisinin kullanımına ilişkin olduğu için CBK ile kanunlarda değişiklik ya da ekleme yapılamaz.
+
+   * *Sınıf tartışması örneği:* Türkiye Adalet Akademisi CBK ile kurulmuştur, kamu tüzel kişiliğine sahiptir. Hakim ve savcıların staj eğitimini ve meslek içi eğitimlerini yürütür. Kuruluş ve görevlerinin yargı yetkisinin kullanımını doğrudan etkileyebileceği iddiasıyla CBK ile yapılıp yapılamayacağı tartışılmıştır.
+
+2. **İkinci sınır (An. m. 104/17, 2. cümle — Konu yasağı):**
+
+   * *"Temel haklar, kişi hakları ve ödevleriyle siyasal haklar ve ödevler Cumhurbaşkanlığı kararnamesiyle düzenlenemez."*
+
+   * Kişi hakları (negatif statü hakları) ve siyasi haklar (aktif statü hakları) hakkında CBK ile hiçbir biçimde düzenleme (lehe ya da aleyhe, genişletici ya da sınırlayıcı) yapılamaz.
+
+   * **Sosyal ve ekonomik haklar ve ödevler** CBK ile düzenlenebilir; **ancak sınırlanamaz!**
+
+   * **Düzenleme vs. Sınırlama farkı:** Sınırlama temel hak ve özgürlüğü kullanacak kişinin aleyhine olur. Düzenleme ise bundan fazlasını içerir (bazı düzenlemeler sınırlamayıp bir hakkı genişletebilir, kullanımı kolaylaştırabilir). An. m. 13 sınırlamanın mutlaka **kanunla** yapılması gerektiğini söyler. Dolayısıyla ekonomik ve sosyal haklar bakımından sadece sınırlayıcı olmayan, hakkın kullanımını kolaylaştırıcı veya genişletici düzenlemeler CBK ile yapılabilir.
+
+3. **Üçüncü sınır (An. m. 104/17, 3. cümle — Münhasıran kanunla düzenleme):**
+
+   * *"Anayasada münhasıran kanunla düzenlenmesi öngörülen konularda Cumhurbaşkanlığı kararnamesi çıkarılamaz."*
+
+   * Anayasada münhasıran kanunla düzenlenmesi öngörülen konulardan biri de **idarenin kuruluşu ve görevleridir** (An. m. 123). Ancak Anayasa Cumhurbaşkanına bir alan açmak için belli konularda açıkça kararname çıkarma yetkisi tanıyor (**istisna hükümler**):
+
+     1. Bakanlıkların kurulması ve görevlerinin belirlenmesi (md. 106/11)
+
+     2. Devlet Denetleme Kurulunun kuruluşu ve görevlerinin belirlenmesi (md. 108/4)
+
+     3. Milli Güvenlik Kurulu Genel Sekreterliğinin kurulması (md. 118/6)
+
+     4. Kamu tüzel kişiliğinin kanunla veya CBK ile kurulması (md. 123/3)
+
+     5. Üst kademe kamu yöneticilerinin atanması (md. 104/9)
+
+   * **An. md. 128**'de memurlar ve diğer kamu görevlilerinin nitelikleri, atanmaları, görev ve yetkileri, hakları ve yükümlülükleri, aylık ve ödenekleri ve diğer özlük işleri kanunla düzenlenir (münhasır kanun alanı). İstisnası: Üst kademe kamu görevlilerinin atanma usul ve esasları CBK ile düzenlenebilir.
+
+4. **Dördüncü sınır (An. m. 104/17, 4. cümle — Kanunda açıkça düzenlenen konular):**
+
+   * *"Kanunda açıkça düzenlenen konularda Cumhurbaşkanlığı kararnamesi çıkarılamaz."*
+
+   * Bir önceki cümle ile farkı: Anayasada münhasıran kanunla düzenleneceği öngörülen konularda (kanunla düzenlenmiş olsun ya da olmasın) CBK çıkarılamaz. Anayasada münhasıran kanunla düzenlenmesi öngörülmeyen bir konuda dahi eğer bir kanun varsa artık o konuda CBK çıkarılamaz.
+
+   * **AYM'nin pratik testi:** İncelediğimiz CBK kuralı olmasaydı, karşılaştırmaya esas aldığımız kanun hükmünün CBK ile düzenleme yapılan konuya uygulanabilir olup olmadığına bakarız. Eğer A kanunu B CBK'sının uygulanacağı olaya uygulanabilir nitelikteyse, B CBK'sı kanunda açıkça düzenlenen bir konuyu düzenlemiş demektir ve Anayasaya aykırıdır.
+
+   * Bir konu kanunda açıkça düzenlenmişse o kanun yürürlükten kalkmadıkça o konu CBK ile düzenlenemez. (2018 yazında CBK sistemine geçilmeden önce 703 sayılı KHK ile sırf Cumhurbaşkanı bu hükme takılmasın diye pek çok kanun yürürlükten kaldırılmıştır.)
+
+   * **TBMM'nin aynı konuda kanun çıkarması durumu:** *"Türkiye Büyük Millet Meclisinin aynı konuda kanun çıkarması durumunda, Cumhurbaşkanlığı kararnamesi hükümsüz hale gelir."* (Cumhurbaşkanı ile meclisteki çoğunluk farklı partilerden olursa sistem kilitlenebilir.)
+
+   * Bütün bu saydıklarımız **yetki** ile ilgili şeylerdir. Önce yetki açısından değerlendirilir, sonrasında içeriğe bakılır.
+
+Bağlı Yetki ve Takdir Yetkisi
+-----------------------------
+
+İdarenin özellikle bireysel işlemler yaparken hareket serbestisi ne olmalı?
+
+* **Bağlı Yetki:** İlgili yasal düzenlemede uygulanma koşulları ve sonuçları net bir biçimde belirlenen, belirli koşulların gerçekleşmesi durumunda idareyi belli yönde işlem yapmak zorunda bırakan kurallarla yaratılan yetkiye denir. (Örnek: 65 yaşını dolduran kamu görevlisi emekliye sevk edilir.)
+
+* **Takdir Yetkisi:** İdareye somut durumların özelliklerine göre bir hareket serbestisi tanınmasıdır. Takdir yetkisi karşımıza şu şekillerde çıkabilir:
+
+  * **Sebep unsurunda:** Bir idari işlemin yapılmasına olanak tanıyan birtakım olgulara, idareyi o işlemi yapmaya iten somut olaylara **işlemin sebep unsuru** diyoruz. Koşul daha soyut kavramlarla (örneğin "genel ahlaka aykırılık") ifade edilip idareye o soyut kavramı yorumlama, somut olayın bu kavram kapsamında olup olmadığını belirleme konusunda hareket serbestisi tanınabilir.
+
+  * **Konu unsurunda:** İşlemin doğurduğu hukuki sonuca **konu unsuru** diyoruz. Belirli sınırlar içinde birden çok sonuçtan birini seçme (örneğin "şu kadar liraya kadar idari para cezası") veya belli sonuçlu bir işlemi yapıp yapmama konusunda hareket serbestisi tanınabilir.
+
+* **Örnek:** Kamu düzeni ya da genel ahlaka aykırılık durumunda idare bir toplantı ya da gösteri yürüyüşünü erteleyebilir. (Koşul/Sebep: Genel ahlaka aykırılık. Konu/Hukuki sonuç: Toplantının ertelenmesi.)
+
+★ **Takdir yetkisi yasallık ilkesinin istisnası değildir.** → Yasaya dayanmak ve hukuka aykırı olmamak kaydıyla idarenin belli bir hareket serbestisine sahip olmasında herhangi bir sakınca yok. Ancak bu hareket serbestisi çoğu zaman **hukuka uygunluk denetimine tabidir**; idarenin tamamen keyfi davranacağı anlamına gelmez. → Çok çekirdeğine indiğimizde yargının da karışamayacağı bir değerlendirme alanı olabilir. Subjektif değerlendirme gerektiren noktada yargının kendi değerlendirmesini idarenin değerlendirmesinin yerine koymaması gerekir (**yerindelik – hukukilik sınırı**). → Bağlı yetkinin daha az, takdir yetkisinin daha çok olduğunu söylemek yanlış olmaz.
+
+    **NOT:** Hocamız dersin başında Cumhurbaşkanlığı Kararnamesinin yasallık ilkesi karşısındaki durumu ve normlar hiyerarşisindeki yerine ilişkin bir soru yöneltmiştir. Bu soruyu kendi kendimize düşünmemiz gerektiğini söyledi.

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#14284B">
+  <meta name="description" content="{{ site.aciklama }}">
+  <title>{{ site.baslik }} · {{ site.alt_baslik }}</title>
+  <link rel="icon" type="image/svg+xml" href="_static/amblem.svg">
+  <link rel="stylesheet" href="_static/ankara.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("au-tema");
+        if (t === "koyu" || t === "acik") document.documentElement.setAttribute("data-tema", t);
+      } catch (e) {}
+    })();
+  </script>
+  <script defer src="_static/ankara.js"></script>
+</head>
+<body>
+<a class="atla" href="#dersler">Derslere geç</a>
+<header class="ust-serit">
+  <div class="ust-ic">
+    <a class="marka" href="./">
+      <img class="marka-amblem" src="_static/amblem.svg" alt="" width="36" height="36">
+      <span class="marka-yazi">
+        <span class="marka-ust">{{ site.alt_baslik }}</span>
+        <span class="marka-alt">{{ site.baslik }}</span>
+      </span>
+    </a>
+    <nav class="ust-baglantilar" aria-label="Site">
+      <a class="ust-baglanti" href="#dersler">Dersler</a>
+      <a class="ust-baglanti" href="#hakkinda">Hakkında</a>
+      <button class="tema-dugme" type="button" aria-label="Açık/koyu görünüm" title="Açık/koyu görünüm">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<section class="vitrin-kahraman">
+  <div class="vitrin-kahraman-ic">
+    <div class="vitrin-ust-etiket">{{ site.alt_baslik }}</div>
+    <h1>Ders Notları</h1>
+    <p class="vitrin-giris">Her dersin notları ayrı bir kitapçık: tarayıcıda okunabilen, aranabilen web sürümü ve yazdırmaya uygun PDF sürümü.</p>
+    <ul class="vitrin-sayilar">
+      <li><strong>{{ ders_sayisi }}</strong><span>Ders</span></li>
+      <li><strong>{{ bolum_toplam }}</strong><span>Not sayfası</span></li>
+      {% if pdf_sayisi %}<li><strong>{{ pdf_sayisi }}</strong><span>PDF kitapçık</span></li>{% endif %}
+    </ul>
+  </div>
+</section>
+
+<main id="dersler" class="vitrin-govde">
+  {% for sinif, kartlar in gruplar %}
+  <section class="vitrin-grup" aria-labelledby="sinif-{{ sinif }}">
+    <h2 class="vitrin-grup-baslik" id="sinif-{{ sinif }}">{{ sinif }}. Sınıf <small>{{ kartlar|length }} ders</small></h2>
+    <div class="vitrin-kartlar">
+      {% for d in kartlar %}
+      <article class="ders-karti">
+        <div class="ders-karti-ust">
+          <div class="ders-karti-etiket">{{ d.sube }} · {{ d.yil }}</div>
+          <h3>{% if d.html_var %}<a href="{{ d.kimlik }}/">{{ d.ad }}</a>{% else %}{{ d.ad }}{% endif %}</h3>
+          {% if d.alt_baslik %}<p class="ders-karti-alt-baslik">{{ d.alt_baslik }}</p>{% endif %}
+          <dl class="ders-karti-bilgi">
+            {% if d.hoca %}<div><dt>Öğretim üyesi</dt><dd>{{ d.hoca }}</dd></div>{% endif %}
+            {% if d.bolum %}<div><dt>İçerik</dt><dd>{{ d.bolum }} not sayfası</dd></div>{% endif %}
+          </dl>
+        </div>
+        <div class="ders-karti-eylem">
+          {% if d.html_var %}
+          <a class="dugme dugme-ana" href="{{ d.kimlik }}/">Web'de oku →</a>
+          {% endif %}
+          {% if d.pdf_url %}
+          <a class="dugme dugme-ikincil" href="{{ d.pdf_url }}" download>PDF <small>{{ d.pdf_boyut }}</small></a>
+          {% else %}
+          <span class="dugme dugme-pasif" title="PDF bu derlemede üretilmedi">PDF yok</span>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+
+  <section id="hakkinda" class="vitrin-hakkinda">
+    <h2>Hakkında</h2>
+    <p>{{ site.uyari }}</p>
+    <p>Notlar <a href="https://www.sphinx-doc.org/">Sphinx</a> ile derlenir; web sürümü ve PDF aynı kaynaktan üretilir. Son derleme: {{ tarih }}.</p>
+  </section>
+</main>
+
+<footer class="alt-bilgi">
+  <div class="alt-ic">
+    <p class="alt-kucuk">{{ site.baslik }} · {{ site.alt_baslik }} · Öğrenci notlarıdır, resmî yayın değildir.</p>
+  </div>
+</footer>
+</body>
+</html>

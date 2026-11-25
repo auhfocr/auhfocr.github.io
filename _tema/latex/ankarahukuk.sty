@@ -1,0 +1,133 @@
+%% ---------------------------------------------------------------------------
+%% Ankara Hukuk ders notları — LaTeX/PDF görünümü
+%% Bu dosya ortak.py tarafından Sphinx'in "preamble" anahtarına olduğu gibi
+%% eklenir (paket olarak yüklenmez), bu yüzden \makeatletter kullanılır.
+%% ---------------------------------------------------------------------------
+\makeatletter
+
+% -- Renkler (web temasıyla aynı) -------------------------------------------
+\definecolor{auLacivert}{HTML}{14284B}
+\definecolor{auLacivertAcik}{HTML}{2B4A7E}
+\definecolor{auAltin}{HTML}{B8902F}
+\definecolor{auAltinKoyu}{HTML}{8A6A1F}
+\definecolor{auKagit}{HTML}{F7F3EA}
+\definecolor{auGri}{HTML}{5B6472}
+
+\RequirePackage{eso-pic}
+
+% -- Ders bilgileri (ortak.py \renewcommand ile doldurur) --------------------
+\newcommand{\AUdersAdi}{}
+\newcommand{\AUaltBaslik}{}
+\newcommand{\AUhoca}{}
+\newcommand{\AUyil}{}
+\newcommand{\AUsube}{}
+\newcommand{\AUuyari}{}
+
+% -- Kapak sayfası ------------------------------------------------------------
+\newcommand{\AU@etiket}[1]{%
+  {\sffamily\scriptsize\color{auAltinKoyu}\addfontfeatures{LetterSpace=12}#1}\par
+  \vspace{2pt}}
+\newcommand{\AU@bilgi}[2]{%
+  \protected@edef\AU@tmp{#2}%
+  \ifx\AU@tmp\@empty\else
+    \AU@etiket{#1}%
+    {\large\color{auLacivert}#2\par}%
+    \vspace{12pt}%
+  \fi}
+
+\newcommand{\AUkapak}{%
+  \begin{titlepage}%
+    \AddToShipoutPictureBG*{%
+      \AtPageUpperLeft{%
+        \put(0,\LenToUnit{-0.46\paperheight}){%
+          \color{auLacivert}\rule{\paperwidth}{0.46\paperheight}}%
+        \put(0,\LenToUnit{-0.46\paperheight}){%
+          \color{auAltin}\rule{\paperwidth}{3pt}}%
+      }%
+      \AtPageLowerLeft{%
+        \put(0,0){\color{auKagit}\rule{\paperwidth}{0.54\paperheight}}%
+        \put(0,0){\color{auAltin}\rule{\paperwidth}{6pt}}%
+      }%
+    }%
+    \AddToShipoutPictureFG*{%
+      \AtPageUpperLeft{%
+        \put(\LenToUnit{2.6cm},\LenToUnit{-3.6cm}){%
+          \parbox[t]{\dimexpr\paperwidth-5.2cm\relax}{%
+            \raggedright
+            {\sffamily\small\color{auAltin}\addfontfeatures{LetterSpace=18}%
+             ANKARA ÜNİVERSİTESİ HUKUK FAKÜLTESİ\par}%
+            \vspace{6pt}%
+            {\color{auAltin}\rule{2.2cm}{1.2pt}\par}%
+            \vspace{1.6cm}%
+            {\fontsize{34}{40}\selectfont\color{white}\AUdersAdi\par}%
+            \vspace{14pt}%
+            {\Large\itshape\color{white!82!auLacivert}\AUaltBaslik\par}%
+            \vspace{1.2cm}%
+            {\sffamily\small\color{white!70!auLacivert}%
+             \addfontfeatures{LetterSpace=12}DERS NOTLARI\par}%
+          }}%
+      }%
+      \AtPageLowerLeft{%
+        \put(\LenToUnit{2.6cm},\LenToUnit{0.46\paperheight}){%
+          \parbox[t]{\dimexpr\paperwidth-5.2cm\relax}{%
+            \raggedright
+            \AU@bilgi{ÖĞRETİM ÜYESİ}{\AUhoca}%
+            \AU@bilgi{ÖĞRETİM YILI}{\AUyil}%
+            \AU@bilgi{ŞUBE}{\AUsube}%
+          }}%
+        \put(\LenToUnit{2.6cm},\LenToUnit{2.4cm}){%
+          \parbox[b]{\dimexpr\paperwidth-5.2cm\relax}{%
+            \raggedright\footnotesize\itshape\color{auGri}\AUuyari\par}}%
+      }%
+    }%
+    \null
+  \end{titlepage}%
+  \clearpage}
+
+% -- Kısım (part) ve bölüm (chapter) başlıkları ------------------------------
+\titleformat{\part}[display]
+  {\centering\normalfont\sffamily\color{auLacivert}}
+  {\small\addfontfeatures{LetterSpace=18}\color{auAltinKoyu}%
+   \MakeUppercase{\partname}~\thepart}
+  {14pt}
+  {\Huge\bfseries}
+  [\vspace{10pt}{\color{auAltin}\rule{3cm}{1.2pt}}]
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\color{auLacivert}}
+  {\small\addfontfeatures{LetterSpace=14}\color{auAltinKoyu}%
+   \MakeUppercase{\chaptertitlename}~\thechapter}
+  {6pt}
+  {\LARGE\bfseries}
+  [\vspace{4pt}{\color{auAltin}\titlerule[1pt]}]
+\titlespacing*{\chapter}{0pt}{0pt}{28pt}
+
+% -- Sayfa üst/alt bilgisi --------------------------------------------------
+\fancypagestyle{normal}{%
+  \fancyhf{}%
+  % Üstte yalnızca bölüm adı (uzun başlıklar başka metinle çakışmasın),
+  % altta ders adı ve sayfa numarası.
+  \fancyhead[L]{\sffamily\footnotesize\color{auGri}\nouppercase{\leftmark}}%
+  \fancyfoot[L]{\sffamily\scriptsize\color{auAltinKoyu}\addfontfeatures{LetterSpace=8}\AUdersAdi}%
+  \fancyfoot[R]{\sffamily\footnotesize\color{auLacivert}\thepage}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[R]{\sffamily\footnotesize\color{auLacivert}\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+\renewcommand{\headrule}{%
+  {\color{auAltin}\hrule\@height\headrulewidth\@width\headwidth}%
+  \vskip-\headrulewidth}
+\setlength{\headheight}{14pt}
+
+% -- Özgün not sayfası işaretleri (".. rubric:: Sayfa N" + :class: sayfa) ---
+% ankara_hukuk_ek uzantısı bu rubric'leri \AUsayfaIsareti{...} olarak yazar.
+\newcommand{\AUsayfaIsareti}[1]{%
+  \par\addvspace{4pt}%
+  {\raggedleft\sffamily\scriptsize\color{auGri}#1\par}%
+  \nobreak\vspace{2pt}\nobreak}
+
+\makeatother
